@@ -16,9 +16,6 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #FFF;
 
-  height: 100%;
-  width: 100%;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +25,11 @@
   body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
     min-height: 100vh;
+    overscroll-behavior: contain; /* For some glorious reason this only works for mobile??? */
   }
 
   /* body {
